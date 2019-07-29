@@ -1,0 +1,139 @@
+body{
+  margin: 0 auto;
+}
+.kalkulator{
+  margin:60px auto;
+  background-color: rgba(0,0,0,0.8);
+  width: 300px;
+  height:500px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.result{
+  padding:10px;
+  text-align: right;
+  color:#fff;
+  font-weight:bold;
+  font-size: 60px;
+  flex:1;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.input{
+  margin:10px;
+  flex:1;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.input div{
+  height:70px;
+  width:100%;
+  display: flex;
+}
+.input div span{
+  margin:2px;
+  display: flex;
+  flex:1;
+  font-size: 25px;
+  color:#fff;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.number{
+  background-color: rgba(255,255,255,0.2)
+}
+.number:active,.number:focus{
+  background-color: rgba(255,255,255,0.4)
+}
+.operation{
+  background-color: rgba(255,150,0,0.8);
+}
+.operation.active,.operation:active,.operation:focus{
+  animation: change .5s forwards;
+}
+.option{
+  background-color: rgba(216, 208, 193, 0.774);
+  color: #000!important;
+}
+.option:active,.option:focus{
+  background-color: rgba(216, 208, 193, 1);
+}
+@-webkit-keyframes change {
+  from{
+  }
+  to{
+    background-color: rgba(255,255,255,0.8);
+    color:rgba(255,150,0,0.8);
+  }
+}
+@keyframes change {
+  from{
+  }
+  to{
+    background-color: rgba(255,255,255,0.8);
+    color:rgba(255,150,0,0.8);
+  }
+}
+.n0::before{
+  content:"\0030"
+}
+.n1::before{
+  content:"\0031";
+}
+.n2::before{
+  content:"\0032";
+}
+.n3::before{
+  content:"\0033";
+}
+.n4::before{
+  content:"\0034";
+}
+.n5::before{
+  content:"\0035";
+}
+.n6::before{
+  content:"\0036";
+}
+.n7::before{
+  content:"\0037";
+}
+.n8::before{
+  content:"\0038";
+}
+.n9::before{
+  content:"\0039";
+}
+.nx::before{
+  content:"\00D7";
+}
+.ncl::before{
+  content:"\0043";
+}
+.nu::before{
+  content:"+/-";
+}
+.npc::before{
+  content:"\0025";
+}
+.nd::before{
+  content:"\00F7";
+}
+.nm::before{
+  content:"\002D";
+}
+.np::before{
+  content:"\002B";
+}
+.nc::before{
+  content:"\002E";
+}
+.nr::before{
+  content:"\003D";
+}

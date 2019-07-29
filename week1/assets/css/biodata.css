@@ -1,0 +1,104 @@
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.paper{
+  background-color: rgba(0,0,0,0.05);
+  width:700px;
+  min-height: 800px;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+.heading{
+  border-bottom-left-radius: 100px;
+  background-image: linear-gradient(to bottom right, rgb(0, 153, 255) , rgb(203, 255, 248));
+  height:200px;
+  position: relative;
+}
+.greyed{
+  color:rgba(0,0,0,0.6);
+}
+.heading .picture{
+  background-color: #fff;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  left:10%;
+  top:10%;
+}
+.heading .picture img{
+  border-radius: inherit;
+  text-align: center;
+  height: 100%;
+  width:100%;
+}
+.heading .name{
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  left:40%;
+  top:20%;
+}
+.heading .position{
+  position: absolute;
+  font-size: 20px;
+  left:40%;
+  top:40%;
+}
+.heading .location{
+  position: absolute;
+  font-size: 20px;
+  left:40%;
+  top:52%;
+  color:rgba(0,0,0,0.7);
+}
+.body{
+  padding:40px;
+}
+.body .summary .title,.body .experience .title,.body .education .title,.body .organization .title,.body .skills .title,.body .links .title{
+  font-size: 30px;
+}
+.body .summary hr{
+  width:30%;
+  border-top-width: 3px;
+  border-color:#000;
+}
+.body .experience{
+  margin-top: 30px;
+}
+.body .experience .section,.body .education .section{
+  display: flex;
+  font-size: 15px;
+}
+.body .experience .section div{
+  flex:1;
+  padding:5px;
+}
+ul.no-style{
+  list-style-type: none;
+  padding:0;
+  padding-left:10px;
+}
+ul.no-list{
+  list-style-type: none;
+  padding:0;
+}
+ul.no-list.stripped li::before{
+  content:"- ";
+}
+ul.no-style li::before{
+  content:": "
+}
+.no-pad{
+  padding:0;
+}
+.big-text{
+  font-size: 19px;
+}
+.pl-20{
+  padding-left: 20px!important;
+}
+.pl-50{
+  padding-left: 50px!important;
+}

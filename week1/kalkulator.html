@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="assets/css/kalkulator.css">
+</head>
+<body>
+  <div class="kalkulator">
+    <div id="result" class="result">0</div>
+    <div class="input">
+      <div>
+        <span class="option ncl" onclick="bersihkan()"></span>
+        <span class="option nu" onclick="ubah()"></span>
+        <span class="option npc" onclick="persen()"></span>
+        <span class="operation nd" onclick="operasi(this,'/')"></span>
+      </div>
+      <div>
+        <span class="number n7" onclick="angka(7)"></span>
+        <span class="number n8" onclick="angka(8)"></span>
+        <span class="number n9" onclick="angka(9)"></span>
+        <span class="operation nx" onclick="operasi(this,'*')"></span>
+      </div>
+      <div>
+        <span class="number n4" onclick="angka(4)"></span>
+        <span class="number n5" onclick="angka(5)"></span>
+        <span class="number n6" onclick="angka(6)"></span>
+        <span class="operation nm" onclick="operasi(this,'-')"></span>
+      </div>
+      <div>
+        <span class="number n1" onclick="angka(1)"></span>
+        <span class="number n2" onclick="angka(2)"></span>
+        <span class="number n3" onclick="angka(3)"></span>
+        <span class="operation np" onclick="operasi(this,'+')"></span>
+      </div>
+      <div>
+        <span class="number"></span>
+        <span class="number n0" onclick="angka(0)"></span>
+        <span class="number nc" onclick="koma('.')"></span>
+        <span class="operation nr" onclick="hitung(true)"></span>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/kalkulator.js"></script>
+</body>
+</html>
